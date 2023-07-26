@@ -1,0 +1,30 @@
+{% extends "home.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block content %}
+    <p>hello world202020202020</p>
+    {% for i in n %}
+    {{i}}
+    {% endfor %}
+
+
+    {% for i in s.values() %}
+    {{i}}
+    {% endfor %}
+
+
+
+    {% for i,j in s.items() %}
+    {{i}}<br>
+    {{j}}<br>
+
+    {% endfor %}
+    {% endblock %}
+</body>
+</html>

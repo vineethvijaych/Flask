@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="{{ url_for('static',filename='css/home.css')}}">
+</head>
+<body>
+    <p>hello world202020202020202020202020202</p>
+
+    <img src="{{ url_for('static',filename='images/img.PNG') }}" alt="">
+
+    <div> 
+        <a href="{{url_for('home')}}">home</a>
+
+        <a href="{{url_for('bform')}}">form</a>
+        <a href="{{url_for('booklist')}}">info</a>
+
+    </div>
+   
+    {% block content %}
+
+    {% endblock %}
+</body>
+</html>
